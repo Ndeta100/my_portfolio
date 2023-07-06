@@ -1,4 +1,4 @@
-name: npm run build
+name: run my portfolio app
 on: [push]
 jobs:
   build:
@@ -10,3 +10,8 @@ jobs:
         node-version: 18
     - run: npm install
     - run: npm run build
+    - name: Upload static content 
+      uses: actions/upload-artifact@v3
+      with:
+        name: static-site
+        path: .next/
