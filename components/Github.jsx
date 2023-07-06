@@ -9,16 +9,16 @@ import React from 'react'
     const { login, id,company, avatar_url, html_url, name, blog,bio,twitter_username,followers, following, created_at, updated_at, public_repos } = data;
     console.log(id);
    return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center mt-11'>
     <div className='space-x-4'>
-    <img className='w-13 h-12 rounded-full ring-2 ring-gray-300 dark:ring-gray-500' src={avatar_url} alt="Profile Avatar" />
+    <img className='w-13 h-12 rounded-full ring-2 ring-gray-300 dark:ring-gray-500 mt-8' src={avatar_url} alt="Profile Avatar" />
     </div>
     <div>
-    <p>Hi, my name is <span>{name}</span> I am a junior sofware developer at <span>{company}</span>, passionate about Software Development and Entrepreneurship. I enjoy working with server side code (Java, Golang, Node.js, Rust), and currently learning frontend (Next.js) at my new job, also a fan of SQL and NoSQL databse. Beside work I love playing football and learning new things </p>
+    <p className='mt-4'>Hello!, my name is <span>{name}</span> I am a junior sofware developer at <span>{company}</span>, passionate about Software Development and Entrepreneurship. I enjoy working with server side code (Java, Golang, Node.js, Rust), and currently learning frontend (Next.js) at my new job, also a fan of SQL and NoSQL databse. Beside work I love playing football and learning new things </p>
     </div>
     
-    <a href={html_url} target='_blank'>GitHub Profile details </a>
-    <div>
+    <a href={html_url} target='_blank' className='mt-4'>GitHub Profile details </a>
+    <div className='grid grid-cols-2 gap-4 mt-4'>
     <p>GitHub: {login}</p>
     <p>GitHub Id : {id}</p>
     <p>blog: {blog}</p>
