@@ -14,7 +14,7 @@ import React from 'react'
     <img className='w-13 h-12 rounded-full ring-2 ring-gray-300 dark:ring-gray-500 mt-8' src={avatar_url} alt="Profile Avatar" />
     </div>
     <div>
-    <p className='mt-4'>Hello!, my name is <span>{name}</span> I am a junior sofware developer at <span>{company}</span>, passionate about Software Development and Entrepreneurship. I enjoy working with server side code (Java, Golang, Node.js, Rust), and currently learning frontend (Next.js) at my new job, also a fan of SQL and NoSQL databse. Beside work I love playing football and learning new things </p>
+    <p className='mt-4'>Hello!, my name is <span>{name}</span> I am a junior software developer at <span>{company}</span>, passionate about Software Development and Entrepreneurship. I enjoy working with server side code (Java, Golang, Node.js, Rust), and currently learning frontend (Next.js) at my new job, also a fan of SQL and NoSQL databse. Beside work I love playing football and learning new things </p>
     </div>
     
     <a href={html_url} target='_blank' className='mt-4'>GitHub Profile details </a>
@@ -29,8 +29,6 @@ import React from 'react'
     <p>Public repos: {public_repos}</p>
     <p>Created At: {created_at}</p>
     <p>Updated At: {updated_at}</p>
-   
-
     </div>
   </div>
    )
