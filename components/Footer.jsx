@@ -5,7 +5,7 @@ const Footer =()=>{
         <>
         <hr />
         <div>
-            <p>
+            <p className="flex flex-col items-center">
             © {new Date().getFullYear()} Ndeta's Portfolio 
             </p>
         </div>
