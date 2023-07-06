@@ -26,3 +26,7 @@ jobs:
           name: static-site
       - name: Test Artifact download
         run: ls -R
+      - name: Archive our content
+        uses: thedoctor0/zip-release@master
+        with:
+          filename: site.zip
