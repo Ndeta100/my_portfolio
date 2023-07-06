@@ -8,12 +8,14 @@ import React from 'react'
     const { login, id, avatar_url, html_url, name } = data;
     console.log(id);
    return (
-    <div>
+    <div className='flex flex-col items-center'>
+    <div className=''>
+    <img className='w-13 h-12 rounded-full ring-2 ring-gray-300 dark:ring-gray-500' src={avatar_url} alt="Profile Avatar" />
+    </div>
     <h1>{name}</h1>
     <p>Login: {login}</p>
     <p>ID: {id}</p>
-    <img src={avatar_url} alt="Profile Avatar" />
-    <a href={html_url}>GitHub Profile</a>
+    <a href={html_url} target='_blank'>GitHub Profile</a>
   </div>
    )
 }
