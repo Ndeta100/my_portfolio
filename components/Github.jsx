@@ -7,7 +7,12 @@ import React from 'react'
      if(!response.ok) throw new Error('Failed to fetch new data')
     const data=await response.json()
     const { login, id,company, avatar_url, html_url, name, blog,bio,twitter_username,followers, following, created_at, updated_at, public_repos } = data;
+    //Formating dates in Javascript
+    let create_at_format = created_at.toString().slice(0, 10);
+    let updated_at_format=updated_at.toString().slice(0,10)
     console.log(id);
+    //Logging for testing
+    console.log(create_at_format, "format");
    return (
     <div className='flex flex-col items-center mt-11'>
     <div className='space-x-4'>
@@ -27,8 +32,8 @@ import React from 'react'
     <p>Followers: {followers}</p>
     <p>Following: {following}</p>
     <p>Public repos: {public_repos}</p>
-    <p>Created At: {created_at}</p>
-    <p>Updated At: {updated_at}</p>
+    <p>Created At: {create_at_format}</p>
+    <p>Updated At: {updated_at_format}</p>
     </div>
   </div>
    )
