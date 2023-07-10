@@ -10,8 +10,6 @@ export default function Home() {
 		<div className="container px-10 md:px-20 lg:px-40 mx-auto">
 			<Navbar  />
 			<Github/>
-		
-			{/* <Portfolio/> */}
 			<Footer />
 		</div>
 		</>

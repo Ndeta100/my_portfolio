@@ -8,7 +8,8 @@ const Portfolio=async()=>{
     console.log(data[0].id);
     return(
         <div>
-      <h1 className='flex flex-col items-center mt-11'>My Portfolio</h1>
+      <button className='flex flex-col items-center mt-11'>My Portfolio</button>
+      
       {data.map((item) => (
         <div className="grid grid-cols-2 gap-2 mt-4 border rounded-lg shadow" key={item.id}>
           <h2 className='my-4 mr-4'>Project name: {item.name}</h2>
